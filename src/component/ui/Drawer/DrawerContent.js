@@ -5,12 +5,12 @@ import {View} from 'react-native';
 import {Avatar, Caption, Drawer, Title} from 'react-native-paper';
 import Routes from '../../../routes/routes';
 import styles from './style';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import Feather from 'react-native-vector-icons/Feather';
-import Icons from 'react-native-vector-icons/MaterialIcons';
 import {Color} from '../../../utils/Color';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import Feather from 'react-native-vector-icons/Feather';
+import Icons from 'react-native-vector-icons/FontAwesome5';
+import User from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/Ionicons'
 
  
 
@@ -67,7 +67,7 @@ export function DrawerContent(props) {
           />
           <DrawerItem
             icon={() => (
-              <Icon name="face-profile" color={Color.ORANGE} size={25} />
+              <User name="user-o" color={Color.ORANGE} size={25} />
             )}
             label="My Profile"
             labelStyle={{fontSize:15, color: Color.PRIMARY_DARK}}
@@ -75,7 +75,7 @@ export function DrawerContent(props) {
           />
           <DrawerItem 
            icon = {()=>(
-             <Icon name="file-document-edit-outline" color={Color.ORANGE} size={25}/>
+             <Icon name="book" color={Color.ORANGE} size={25}/>
            )} 
            label="Booking Detail"
            labelStyle = {{fontSize:15,color:Color.PRIMARY_DARK}}
@@ -95,7 +95,7 @@ export function DrawerContent(props) {
           /> */}
           <DrawerItem
             icon={() => (
-              <Icons name="attach-money" color={Color.ORANGE} size={25} />
+              <Icons name="coins" color={Color.ORANGE} size={25} />
             )}
             label="Earning"
             labelStyle={{fontSize:15, color: Color.PRIMARY_DARK}}
@@ -103,7 +103,7 @@ export function DrawerContent(props) {
           />
           <DrawerItem
             icon={() => (
-              <Icons name="notifications" color={Color.ORANGE} size={25} />
+              <Icon name="notifications-outline" color={Color.ORANGE} size={25} />
             )}
             label="Notifications"
             labelStyle={{fontSize:15, color: Color.PRIMARY_DARK}}
@@ -111,7 +111,7 @@ export function DrawerContent(props) {
           />
           <DrawerItem
             icon={() => (
-              <Icon name="logout" color={Color.ORANGE} size={25} />
+              <Feather name="log-out" color={Color.ORANGE} size={25} />
             )}
             label="Log-Out"
             labelStyle={{fontSize:15, color: Color.PRIMARY_DARK}}

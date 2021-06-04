@@ -7,7 +7,7 @@ export default class SocialButton extends Component {
   render() {
     return (
      
-      <TouchableOpacity onPress={this.props.onPress} style={styles.button}>
+      <TouchableOpacity onPress={this.props.onPress} style={[styles.button,{backgroundColor:this.props.bgColor}]}>
         <Image source={this.props.source} style={styles.image}/>
         <Label style={styles.text}>{this.props.btntext}</Label>
       </TouchableOpacity>

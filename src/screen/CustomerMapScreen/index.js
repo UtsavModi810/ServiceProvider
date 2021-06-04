@@ -34,7 +34,8 @@ export class CustomerMapScreen extends Component {
     this.state = {
       show:true,
       modelshow: false,
-      doneModelShow:false
+      doneModelShow:false,
+      isFinishBtn:true
     };
   }
 
@@ -133,13 +134,13 @@ export class CustomerMapScreen extends Component {
                </Modal>
            
 
-                    <SocialButton
+               <SocialButton
                       btntext="Finish"
-                      onPress={() =>
-                        this.setState({doneModelShow:true})
-                      }
+                      bgColor={this.state.isFinishBtn?Color.LIGHT_GRAY:null}
+                      onPress={() => this.setState({doneModelShow: true})}
                       source={require('../../assets/Img/right_logo.png')}
-                    />
+                      disabled={this.state.isFinishBtn}
+                    />  
                   </View>
                 </View>
               </View>

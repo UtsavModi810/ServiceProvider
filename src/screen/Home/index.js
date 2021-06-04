@@ -145,33 +145,11 @@ export class Home extends Component {
                 <Label small color={Color.PRIMARY}>₹400.00</Label>
               </View>
             </View>
-            {/* <View style={{marginHorizontal:20,marginTop:10}}>
-              <View style={{flexDirection:'row',justifyContent:'space-evenly'}}>
-                <View style={{justifyContent:'center',alignItems:'center'}}>
-                  <Image source={require("../../assets/Img/right_logo.png")} style={{width:ThemeUtils.relativeWidth(15),height:ThemeUtils.relativeHeight(10)}} />
-                  <Label>80%</Label>
-                  <Label>Acceptance</Label>
-                </View>
-                <View style={{justifyContent:'center',alignItems:'center'}}>
-                  <Image source={require("../../assets/Img/star_logo.png")} style={{width:ThemeUtils.relativeWidth(15),height:ThemeUtils.relativeHeight(10)}} />
-                  <Label>4.5</Label>
-                  <Label>Rating</Label>
-                </View>
-                <View style={{justifyContent:'center',alignItems:'center'}}>
-                  <Image source={require("../../assets/Img/close_logo.png")} style={{width:ThemeUtils.relativeWidth(11),height:ThemeUtils.relativeHeight(6)}} />
-                 
-                  <Label>3</Label>
-                  <Label>Cancelled</Label>
-                 
-                </View>
-                
-              </View>
-
-            </View>   // safg */}
-
-            {/* <TouchableOpacity></TouchableOpacity> */}
+          
           </View>
         </View>
+
+        
         <Modal
           animationType={'slide'}
           transparent={true}
@@ -179,36 +157,47 @@ export class Home extends Component {
           <View style={{backgroundColor: '#000000aa', flex: 1}}>
             <View
               style={{
-                flex: 1,
+                // backgroundColor:Color.PRIMARY_DARK,
                 backgroundColor: Color.WHITE,
                 borderRadius: 25,
-                margin: 25,
+                // margin: 25,
+                // marginHorizontal:50,
+                // marginHorizontal:10,
+                paddingHorizontal:20,
+                padding:10,
+                alignSelf:'center',
+                justifyContent:'center',
+                marginTop:100,
+                width:"90%"
               }}>
               <Image
                 source={require('../../assets/Img/boy_logo.jpg')}
+                resizeMode="contain"
                 style={{
-                  width: 100,
-                  height: 100,
+                  width:ThemeUtils.responsiveHeight(100),
+                  height:ThemeUtils.responsiveHeight(100),
                   alignSelf: 'center',
-                  margin: 25,
-                  marginTop: 30,
+                  // margin: 25,
+                  // marginTop: 50,
                 }}
               />
-              <Label align="center" xxlarge color={Color.PRIMARY}>
-                New Booking
+              <Label  align="center" mb={10} xxlarge color={Color.PRIMARY}>
+                New Order
               </Label>
               <View
                 style={{
                   flexDirection: 'row',
-                  justifyContent: 'space-evenly',
-                  marginTop: 30,
+                  justifyContent:'space-between',
+                 
+                 
+
                 }}>
                 <View>
-                  <Label large color={Color.PRIMARY_DARK}>
+                  <Label large  color={Color.PRIMARY_DARK}>
                     Expected Earning
                   </Label>
                   <Label large color={Color.DARK_GRAY}>
-                  ₹300.00
+                    Rs.300
                   </Label>
                 </View>
                 <View>
@@ -220,56 +209,35 @@ export class Home extends Component {
                   </Label>
                 </View>
               </View>
-              <View style={{marginTop: 30, justifyContent: 'center'}}>
-                <Label ms={30} xlarge>
-                  Customer Address
+              <View style={{marginTop:20, justifyContent: 'center'}}>
+                <Label  xlarge>
+                Customer Address
                 </Label>
-                {/* <Image source={require("../../assets/Img/mcD_logo.png")} style={{width:ThemeUtils.relativeWidth(30),height:ThemeUtils.responsiveHeight(50)}}/> */}
-                <Label ms={30} mt={20} small color={Color.DARK_GRAY}>
+          
+                <Label  small color={Color.DARK_GRAY}>
                   404 XYZ ,Ahmedabad,Gujarat,India
                 </Label>
-                <Label ms={30} small color={Color.DARK_GRAY}>
-                  {' '}
+                <Label  small color={Color.DARK_GRAY}>
                   Phone Number : +91 98790 13454
-                </Label>
-              </View>
-
-              <View style={{marginTop: 20, justifyContent: 'center'}}>
-                <Label ms={30} xlarge>
-                  Booking Detail
-                </Label>
-                {/* <Image source={require("../../assets/Img/mcD_logo.png")} style={{width:ThemeUtils.relativeWidth(30),height:ThemeUtils.responsiveHeight(50)}}/> */}
-                <Label ms={30} mt={20} small color={Color.DARK_GRAY}>
-                   AC Installtion & Uninstallation
-                </Label>
-                <Label ms={30} small color={Color.DARK_GRAY}>
-                  Split AC
-                </Label>
-                <Label ms={30} small color={Color.DARK_GRAY}>
-                  Quantity : Item-1
                 </Label>
               </View>
 
               <View
                 style={{
                   flexDirection: 'row',
-                  justifyContent: 'space-evenly',
-                  marginHorizontal:5,
-                  // paddingBottom: 15,
-                  marginTop: 20,
+                  justifyContent:'center',
+                 
+                  marginTop:5,
+                  marginBottom:5,
+                 
                 }}>
-                <SocialButton
-                  btntext="Accept"
-                  onPress={() =>
-                    this.props.navigation.navigate(Routes.OrderCustomerDetails)
-                  }
-                  source={require('../../assets/Img/right_logo.png')}
-                />
-                <SocialButton
-                  btntext="Decline"
-                  source={require('../../assets/Img/cancel_logo.png')}
-                  onPress={() => this.setState({modelshow: true, show: false})}
-                />
+
+                <TouchableOpacity onPress={()=>{this.props.navigation.navigate(Routes.OrderCustomerDetails)}}>
+                <Image source={require("../../assets/Img/yes.png")} resizeMode="contain" style={{width:ThemeUtils.relativeWidth(25),height:ThemeUtils.responsiveHeight(60)}}/>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={()=>this.setState({modelshow:true,show:false})}>
+                <Image source={require("../../assets/Img/no.png")} resizeMode="contain" style={{width:ThemeUtils.relativeWidth(25),height:ThemeUtils.responsiveHeight(60)}}/>
+                </TouchableOpacity>
               </View>
             </View>
           </View>

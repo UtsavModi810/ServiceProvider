@@ -64,7 +64,7 @@ export class OrderCustomerDetails extends Component {
 
                    <View style={{flexDirection:'row',marginStart:30,marginTop:10}}>
                         {/* <Image source={require("../../assets/Img/person_logo.png")} style={{width:ThemeUtils.relativeWidth(20),height:ThemeUtils.relativeHeight(10)}} /> */}
-                        <Icon name="fast-food-outline" size={30} color={Color.ORANGE}/>
+                        <Icon name="book" size={30} color={Color.ORANGE}/>
                         <Label  ms={20} color={Color.PRIMARY_DARK} bolder large>Booking Items</Label>
                     </View>
                 
