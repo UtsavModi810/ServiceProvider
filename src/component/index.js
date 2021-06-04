@@ -12,7 +12,9 @@ import Status from './ui/Status/index';
 import DrawerComponent from './ui/Drawer/index';
 import Card from './ui/Card/index';
 import SearchBar from './ui/SearchBar/index'
-import TopNav from './ui/TopNav/index'
+import TopNav from './ui/TopNav/index';
+import TopNavEarning from './ui/TopNavEarning/index';
+
 
 export {
   PickerExample,
@@ -29,5 +31,6 @@ export {
   DrawerComponent,
   Card,
   SearchBar,
-  TopNav
+  TopNav,
+  TopNavEarning,
 };

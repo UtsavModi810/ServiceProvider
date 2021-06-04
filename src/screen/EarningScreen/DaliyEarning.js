@@ -16,21 +16,21 @@ export class DaliyEarning extends Component {
               {
                 id: 1,
                 date: '15/04/2020',
-                orderid: 'Order #886402',
+                orderid: 'Booking #886402',
                 img: require('../../assets/Img/salary.png'),
                 price: '$6',
               },
               {
                 id: 2,
                 date: '15/04/2020',
-                orderid: 'Order #886402',
+                orderid: 'Booking #886402',
                 img: require('../../assets/Img/salary.png'),
                 price: '$6',
               },
               {
                 id: 3,
                 date: '15/04/2020',
-                orderid: 'Order #886402',
+                orderid: 'Booking #886402',
                 img: require('../../assets/Img/salary.png'),
                 price: '$6',
               },
@@ -44,7 +44,7 @@ export class DaliyEarning extends Component {
               {
                 id: 5,
                 date: '15/04/2020',
-                orderid: 'Order #886402',
+                orderid: 'Booking #886402',
                 img: require('../../assets/Img/salary.png'),
                 price: '$6',
               },

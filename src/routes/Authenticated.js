@@ -11,7 +11,7 @@ import RestaurantMapScreen from '../screen/RestaurantMapScreen';
 import CustomerMapScreen from '../screen/CustomerMapScreen';
 import DeliverScreen, { EarningScreen } from '../screen/EarningScreen';
 import { Color } from '../utils';
-import TopNavEarning from '../component/TopNavEarning';
+import {TopNavEarning} from '../component';
 import OrderCustomerDetails from '../screen/OrderCustomerDetails'
 import Notifications from '../screen/Notifications';
 
